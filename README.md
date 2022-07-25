@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/moysklad/api-remap-1.2-doc.svg?branch=master)](https://travis-ci.org/moysklad/api-remap-1.2-doc)
 
 Нотификация в изменениях API
-------------
+-------------
 
 Чтобы узнавать об изменениях в документации и api, вы можете подписаться на нотификации об изменении документации в github.
 Для этого
