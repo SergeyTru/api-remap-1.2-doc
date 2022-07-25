@@ -3,10 +3,10 @@ const { JSDOM } = jsdom;
 const path = require('path');
 const fs = require('fs');
 
-const lunr = require('../api-doc/source/javascripts/lib/_lunr.js')
-require('../api-doc/source/javascripts/lib/_lunr.stemmer.support.js')(lunr);
-require('../api-doc/source/javascripts/lib/_lunr.ru.js')(lunr);
-require('../api-doc/source/javascripts/lib/_lunr.multi.js')(lunr);
+const lunr = require('../source/javascripts/lib/_lunr.js')
+require('../source/javascripts/lib/_lunr.stemmer.support.js')(lunr);
+require('../source/javascripts/lib/_lunr.ru.js')(lunr);
+require('../source/javascripts/lib/_lunr.multi.js')(lunr);
 
 const filePrefix = process.argv[2];
 console.log("Prebuild index for " + filePrefix);
@@ -62,7 +62,7 @@ function getPages(startPath, filter) {
             result.push(filename);
         }
     }
-    
+
     return result;
 }
 
